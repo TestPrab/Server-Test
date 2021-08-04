@@ -1,4 +1,4 @@
-{%extends 'base.html'%} {% if user %}
+{%extends 'base.html'%} {%block content%} {% if user %}
 <style>
   pre {
     white-space: wrap;
@@ -14,4 +14,4 @@
 <hr />
 {% endfor %} {% else %}
 <div>Not logged in</div>
-{% endif %}
+{% endif %} {% endblock %}

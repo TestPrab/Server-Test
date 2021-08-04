@@ -1,6 +1,13 @@
 # Created by https://www.toptal.com/developers/gitignore/api/pycharm,flask,python,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=pycharm,flask,python,visualstudiocode
 
+### Database ###
+*.accdb
+*.db
+*.dbf
+*.mdb
+*.pdb
+*.sqlite3
 ### Flask ###
 instance/*
 !instance/.gitignore

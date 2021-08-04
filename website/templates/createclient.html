@@ -7,9 +7,15 @@
         Register
       </h1>
       {{form.client_name.label()}} {{form.client_name(class="form-control",
-      placeholder="Client_name")}} {{form.grant_types.label()}}
-      {{form.grant_types(class="form-control", placeholder="Grant_Types")}}
-      {{form.response_types.label()}}
+      placeholder="Client_name")}}
+      <!-- <label for="grant_types">Select grant Type</label>
+      <select name="grants">
+        {% for grant in grants%}
+        <option value="{{ grant_types}}" selected>{{ grant }}</option>
+        {% endfor %}
+      </select> -->
+      {{form.grant_types.label()}} {{form.grant_types(class="form-control",
+      placeholder="Grant_Types")}} {{form.response_types.label()}}
       {{form.response_types(class="form-control",
       placeholder="Response_Types")}} {{form.scope.label()}}
       {{form.scope(class="form-control", placeholder="Scope")}}
